@@ -12,8 +12,6 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.set("strictQuery", false);
-
 mongoose.connect(
   "mongodb+srv://Jackson:2002--Jack@cluster0.2ogjybj.mongodb.net/todolistDB",
   () => {
