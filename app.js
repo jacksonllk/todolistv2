@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB");
+mongoose.connect("mongodb+srv://Jackson:2002--Jack@cluster0.2ogjybj.mongodb.net/todolistDB");
 
 //items schema
 const itemsSchema = {
